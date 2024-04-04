@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "rootDir": "src"
+  },
+  "extends": "./node_modules/@reasonx/tools/dist/typescript/tsconfig.base.json"
+}

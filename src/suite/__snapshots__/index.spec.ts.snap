@@ -1,0 +1,76 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`suite > should create & run the successful benchmark 1`] = `
+Map {
+  "Utils" => {
+    "children": [
+      "Utils >> LinkedList",
+      "Utils >> Object",
+    ],
+    "description": "Utils",
+    "id": "Utils",
+    "status": "run",
+  },
+  "Utils >> LinkedList" => {
+    "children": [
+      "Utils >> LinkedList >> LinkedList Push",
+      "Utils >> LinkedList >> LinkedList Pop",
+    ],
+    "description": "LinkedList",
+    "id": "Utils >> LinkedList",
+    "status": "run",
+  },
+  "Utils >> LinkedList >> LinkedList Push" => {
+    "children": [],
+    "description": "LinkedList Push",
+    "id": "Utils >> LinkedList >> LinkedList Push",
+    "status": "run",
+  },
+  "Utils >> LinkedList >> LinkedList Pop" => {
+    "children": [],
+    "description": "LinkedList Pop",
+    "id": "Utils >> LinkedList >> LinkedList Pop",
+    "status": "run",
+  },
+  "Utils >> Object" => {
+    "children": [
+      "Utils >> Object >> Deep Walk",
+    ],
+    "description": "Object",
+    "id": "Utils >> Object",
+    "status": "run",
+  },
+  "Utils >> Object >> Deep Walk" => {
+    "children": [],
+    "description": "Deep Walk",
+    "id": "Utils >> Object >> Deep Walk",
+    "status": "run",
+  },
+}
+`;
+
+exports[`suite > should create & run the successful benchmark 2`] = `
+Map {
+  "Utils >> LinkedList >> LinkedList Push" => [MockFunction spy],
+  "Utils >> LinkedList >> LinkedList Pop" => [MockFunction spy],
+  "Utils >> Object >> Deep Walk" => [MockFunction spy],
+}
+`;
+
+exports[`suite > should create & run the successful benchmark 3`] = `
+Map {
+  "Utils >> LinkedList" => {
+    "benchFunctionIds": [
+      "Utils >> LinkedList >> LinkedList Push",
+      "Utils >> LinkedList >> LinkedList Pop",
+    ],
+    "id": "Utils >> LinkedList",
+  },
+  "Utils >> Object" => {
+    "benchFunctionIds": [
+      "Utils >> Object >> Deep Walk",
+    ],
+    "id": "Utils >> Object",
+  },
+}
+`;
